@@ -31,7 +31,7 @@ After filling in correctly, it will redirect to the game page
 A new SaveOnServer button will be added on the Saves page, where you can normally manage your saves and data.
 
 They will be uploaded and stored in your bucket.
-
+![bucket](./img/image-20231203192228378.png)
 ## Why do we need a server-side?
 
 The original game is based on twinejs, one of its design concepts is to be independent of the server. Since it doesn't have authentication functionality, it can't verify who is calling the save when it's on the cloud server. Of course, my implementation just added an entrance authentication, it still can't realize the function of one game recording multiple players' saves.
