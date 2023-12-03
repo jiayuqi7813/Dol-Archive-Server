@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentication</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function() {
+        var username = prompt("Please enter your username");
+        var password = prompt("Please enter your password");
+        $.ajax({
+            type: "GET",
+            url: "/dol",
+            headers: {
+                "Authorization": username + ":" + password
+            },
+            success: function() {
+                //跳转到dol路由
+                window.location.href = "/dol";
+            },
+            error: function() {
+                //跳转到auth路由
+                window.location.href = "/auth";
+            }
+        });
+    });
+</script>
+</body>
+</html>

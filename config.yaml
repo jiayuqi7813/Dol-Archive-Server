@@ -1,0 +1,10 @@
+minio:
+  endpoint: ""
+  accessKey: ""
+  secretKey: ""
+  secure: false
+  bucket: "dol"
+
+login:
+    username: "admin"
+    password: "admin"
